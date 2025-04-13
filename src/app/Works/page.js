@@ -24,7 +24,7 @@ const page = () => {
 
                 </div>
                 <div>
-                    <span>COUSTOMIZED ORDER</span>
+                    <span>COUSTOMIZED ORDERs</span>
                 </div>
             </div>
             <div className="works">
@@ -36,14 +36,13 @@ const page = () => {
 
                 </div>
                 <div>
-                    <span  onClick={()=>{
-                    redirectpage("/Catagories")
-                }}  className="spanss">BRASS & SILVER PRODUCTS</span>
+                    <span className="spanss">BRASS & SILVER PRODUCTS</span>
                 </div>
             </div>
         </div>
+
     </div>
-  );
+  )
 };
 
 export default page;
