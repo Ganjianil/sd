@@ -1,0 +1,104 @@
+.header {
+  background-color: rgb(194, 234, 220);
+  display: flex;
+  align-items: center;
+}
+.bheader {
+  padding-top: 20;
+  padding-bottom: 10;
+  font-size: medium;
+  font-weight: 600;
+  font: 400;
+}
+.b2header {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  gap: 50px;
+  padding-left: 30px;
+}
+.cinput {
+  width: 450px;
+}
+.clocation {
+  display: contents;
+}
+.clsd2 {
+  display: none;
+}
+.cinput2 {
+  display: none;
+}
+.clsd {
+  display: block;
+}
+.mtext{
+    font-size: medium;
+    font-weight: 700;
+    color: rgb(99, 0, 74);
+
+}
+
+/* Styles for tablets */
+@media (max-width: 768px) {
+  .bheader {
+    padding-top: 20;
+    padding-bottom: 10;
+  }
+  .b3header {
+    font-size: 18;
+  }
+  .b2header {
+    gap: 22px;
+    padding-left: 2px; /* Adjust padding for smaller screens */
+  }
+  .cinput {
+    width: 100%; /* Make the input box take the full width */
+  }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+  .b2header {
+    gap: 13px;
+    padding-left: 10px;
+  }
+  .clocation {
+    display: none;
+  }
+  .cinput {
+    width: 100%;
+    font-size: smaller;
+    display: none;
+  }
+  .bheader h5 {
+    font-size: medium;
+  }
+  .clsd {
+    display: none;
+  }
+  .cinput2 {
+    display: flex;
+    width: 350px;
+  }
+  .clsd2 {
+    display: block;
+  }
+  .b22header {
+    margin: 10;
+    display: flex;
+  }
+  .clsds {
+    display: flex;
+    align-items: center;
+  }
+  .mtext{
+    font-size: medium;
+    font-weight: 700;
+    color: rgb(99, 0, 74);
+  }
+  .marquediv{
+    background-color: rgb(255, 255, 255);
+  }
+}

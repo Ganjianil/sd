@@ -1,95 +1,80 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
-export default function Home() {
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./stylesheet.css";
+import Banner from "../Banner/page.js"
+import Catgories from "./Catagories/page.js"
+import About from "./About/page.js"
+import Testimonials from "../Testominals/page.js"
+import Location from "../Location/page.js"
+import Contact from "./Contact/page.js";
+import Work from "./Works/page.js"
+const page = () => {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <>
+      <div className="header">
+        <div>
+          <div className="bheader">
+            <h5 className="b3header">Nandini Brass & Silver Metals</h5>
+          </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div>
+          <div className="b2header container">
+            <div>
+              <input
+                className="form-control clocation"
+                type="text"
+                placeholder="LOCATION"
+              ></input>
+            </div>
+            <div className="d-flex align-items-center ">
+              <div className="">
+                <input
+                  className="form-control cinput"
+                  type="text"
+                  placeholder="SEARCH FOR REQUIRED"
+                ></input>
+              </div>
+              <div className="clsd">
+                {" "}
+                <span>Search</span>
+              </div>
+            </div>
+            <div>Signout</div>
+            <div>Login</div>
+            <div>Contact us</div>
+          </div>
+        </div>
+      </div>
+      <div className="marquediv">
+        <marquee>
+          <h5 className="mtext">Coustomized Orders Are Taken From Any Where</h5>
+        </marquee>
+      </div>
+      <div>
+        <div className="clsds">
+          <div className="b22header">
+            <input
+              className="form-control cinput2"
+              type="text"
+              placeholder="SEARCH FOR REQUIRED"
+            ></input>
+          </div>
+          <div className="clsd2">
+            {" "}
+            <span>Search</span>
+          </div>
+        </div>
+      </div>
+     <Banner/>
+     <Work/>
+     {/* <Catgories /> */}
+     <About/>
+     <Testimonials/>
+     <Location />
+     <Contact />
+   
+    </>
   );
-}
+};
+
+export default page;
