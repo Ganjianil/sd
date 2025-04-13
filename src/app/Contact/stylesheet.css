@@ -1,0 +1,28 @@
+.contact{
+    display: flex;
+    justify-content: center;
+}
+.forminput{
+    display: flex;
+    align-items: center;
+    gap: 10;
+
+}
+.forms{
+    padding: 20px;
+}
+.btnform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dbox{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dotted black;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}

@@ -1,0 +1,17 @@
+.find{
+    display: flex;
+    justify-content: center;
+}
+.findmap{
+    display: flex;
+    flex-direction: column;
+}
+.maps{
+    width: 100%;
+    padding: 25px;
+}
+.lcs{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
